@@ -10,16 +10,35 @@
 
 body{
   font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
   color: var(--main-text-color);
   background-color: var(--main-background-color)
 }
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+ul{
+  margin: 0;
+  padding: 0;
+}
 .link {
   text-decoration: none;
+  display: block;
 }
 .site-nav .nav .current{
   color: var(--accent-color);
 }
+.container{
+  width: 1170px;
+}
+img{
+  display: block;
+}
 /* ------------------------navigation-------------------------- */
+header{
+  border-bottom: 1px solid var(--accent-color);
+}
 .logo{
     text-decoration: none;
     font-family: 'Raleway';
@@ -29,6 +48,8 @@ body{
     line-height: 1.19;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+    display: block;
+    min-width: 145px;
 }
 .logo-accent{
 color: var(--accent-color)
@@ -70,7 +91,9 @@ color: var(--accent-color)
 }
 
 .hero-title{
-  font-weight: 900;
+    width: 696px;
+    margin: 0 auto;
+    font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     text-align: center;
@@ -84,6 +107,7 @@ color: var(--accent-color)
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.06em;
+    color: #ffffff;
     background-color: var(--accent-color);
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -107,6 +131,10 @@ color: var(--accent-color)
     clip-path: inset(50%);
     margin: -1px;
 }
+.section-advantage{
+  padding-top: 94px;
+  padding-bottom: 118px;
+}
 .advantage {
   list-style: none;
 }
@@ -116,14 +144,19 @@ color: var(--accent-color)
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    margin-bottom: 10px;
 }
 .advantage-text{
+    width: 270px;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
 }
 /* --------------------work---------------------- */
+.section-work{
+  padding-bottom: 94px;
+}
 .work{
   list-style: none;
 }
@@ -133,6 +166,8 @@ color: var(--accent-color)
 }
 .section-team {
   background-color: var(--secondary-bgc);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .section-title{
     font-weight: 700;
@@ -140,44 +175,63 @@ color: var(--accent-color)
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
+    margin-bottom: 50px;
 }
-
+.team-img {
+  margin-bottom: 30px;
+}
 .team-title{
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 10px;
 }
 .team-text{
-  font-size: 16px;
-    line-height: 1.19px;
+    font-size: 16px;
+    line-height: 1.19;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+    padding-bottom: 30px;
 }
 .team-list{
+  width: 270px;
+  
   background-color: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 /* --------------------footer------------------ */
+.footer{
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 215px;
+}
 .logo-footer {
   color: #ffffff;
+  margin-bottom: 20px;
 }
 .footer{
   background-color: var(--temporory-bgc);
 }
 .address{
   font-style: normal;
+  width: 231px;
 }
 .address-text{
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: #ffffff;
+    margin-bottom: 9px;
 }
 .address-list{
   list-style: none;
 }
+
 .address-list .link {
     font-size: 14px;
     line-height: 1.71;
@@ -188,18 +242,19 @@ color: var(--accent-color)
 .address-list .link:focus {
   color: var(--accent-color);
 }
-.join{
-  font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #FFFFFF;
+.mail-footer{
+  margin-bottom: 8px;
 }
-/* ----------------------------------------portfolio------------------------------------------------------- */
 
+/* ----------------------------------------portfolio------------------------------------------------------- */
+.portfolio{
+  padding-top: 100px;
+  padding-bottom: 94px;
+}
 .filter{
   list-style: none;
+  margin-bottom: 50px;
+  display: flex;
 }
 .filter-button {
   font-style: inherit;
@@ -211,6 +266,11 @@ color: var(--accent-color)
   background: #F5F4FA;
   border-radius: 4px;
   cursor: pointer;
+  border: transparent;
+  padding: 6px 22px;
+}
+.button-all{
+  padding: 6px 25px;
 }
 
 .filter-button:hover,
@@ -221,17 +281,27 @@ color: var(--accent-color)
 
 .worklist{
   list-style: none;
+  display: flex;
 }
+.worklist > li{
+  width: 372px;
+  border: 1px solid #EEEEEE;
+}
+.portfolio-img{
 
+  margin-bottom: 20px;
+}
 .worklist-title{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-bottom: 4px;
 }
 .worklist-text{
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+    margin-bottom: 20px;
 }
