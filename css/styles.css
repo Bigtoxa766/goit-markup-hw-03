@@ -30,7 +30,9 @@ ul{
   color: var(--accent-color);
 }
 .container{
-  width: 1170px;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 img{
   display: block;
@@ -38,6 +40,10 @@ img{
 /* ------------------------navigation-------------------------- */
 header{
   border-bottom: 1px solid var(--accent-color);
+}
+.flex{
+  display: flex;
+  align-items: center;
 }
 .logo{
     text-decoration: none;
@@ -51,20 +57,32 @@ header{
     display: block;
     min-width: 145px;
 }
+.header-logo{
+  margin-right: 93px;
+}
 .logo-accent{
 color: var(--accent-color)
 }
-
+.site-nav{
+  margin-right: auto;
+}
 .nav{
   list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 50px;
 }
-
+.nav .link-nav{
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
 .link-nav{
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
+    
 }
 .link-nav:hover,
 .link-nav:focus {
@@ -73,6 +91,9 @@ color: var(--accent-color)
 
 .contact {
   list-style: none;
+  display: flex;
+  gap: 50px;
+  
 }
 .contact-link{
     font-weight: 500;
@@ -80,6 +101,10 @@ color: var(--accent-color)
     line-height: 16px;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color);
+}
+.contact .contact-link{
+  padding-bottom: 32px;
+  padding-top: 32px;
 }
 .contact-link:hover,
 .contact-link:focus {
@@ -93,6 +118,7 @@ color: var(--accent-color)
 .hero-title{
     width: 696px;
     margin: 0 auto;
+    margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -111,7 +137,11 @@ color: var(--accent-color)
     background-color: var(--accent-color);
     cursor: pointer;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-color: var(--accent-color);
     border-radius: 4px;
+    display: block;
+    margin: 0 auto;
+    padding: 10px 32px;
 }
 .hero-btn:hover,
 .hero-btn:focus{
@@ -137,6 +167,12 @@ color: var(--accent-color)
 }
 .advantage {
   list-style: none;
+  display: flex;
+  margin:auto ;
+}
+
+.advantage-list:not(:last-child){
+  margin-right: 30px;
 }
 .advantage-title{
     font-weight: 700;
@@ -152,6 +188,7 @@ color: var(--accent-color)
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
+   
 }
 /* --------------------work---------------------- */
 .section-work{
@@ -159,11 +196,23 @@ color: var(--accent-color)
 }
 .work{
   list-style: none;
+  display: flex;
+}
+.work-list:not(:last-child){
+  margin-right: 30px;
+}
+.work-list{
+  margin-left: auto;
+  margin-right: auto;
 }
 /* -----------------------team------------------- */
 .team{
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
+
 .section-team {
   background-color: var(--secondary-bgc);
   padding-top: 94px;
@@ -199,16 +248,18 @@ color: var(--accent-color)
 }
 .team-list{
   width: 270px;
-  
+  /* flex-basis: calc((100%-30px * 3) / 4); */
   background-color: #FFFFFF;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
+/* .team:not(:last-child){
+  margin-right: 30px;
+} */
 /* --------------------footer------------------ */
 .footer{
   padding-top: 60px;
   padding-bottom: 60px;
-  padding-left: 215px;
 }
 .logo-footer {
   color: #ffffff;
@@ -251,11 +302,17 @@ color: var(--accent-color)
   padding-top: 100px;
   padding-bottom: 94px;
 }
+
 .filter{
   list-style: none;
   margin-bottom: 50px;
   display: flex;
+  justify-content: center;
 }
+.filter-btn-list:not(:last-child){
+margin-right: 8px;
+}
+
 .filter-button {
   font-style: inherit;
   font-weight: 500;
@@ -282,21 +339,21 @@ color: var(--accent-color)
 .worklist{
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
-.worklist > li{
-  width: 372px;
-  border: 1px solid #EEEEEE;
-}
-.portfolio-img{
-
-  margin-bottom: 20px;
+.worklist-list{
+flex-basis: calc((100% - 30px * 2)/3);
+/* width: 370px; */
 }
 .worklist-title{
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+    margin-top: 20px;
     margin-bottom: 4px;
+    margin-left: 24px;
 }
 .worklist-text{
     font-size: 16px;
@@ -304,4 +361,9 @@ color: var(--accent-color)
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
     margin-bottom: 20px;
+    margin-left: 24px;
+}
+.border{
+    width: 370px;
+    border: 1px solid #EEEEEE;
 }
