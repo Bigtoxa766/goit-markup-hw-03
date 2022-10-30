@@ -30,16 +30,17 @@ ul{
   color: var(--accent-color);
 }
 .container{
-  width: 1230px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
+  margin: 0 auto;
 }
 img{
   display: block;
 }
 /* ------------------------navigation-------------------------- */
 header{
-  border-bottom: 1px solid var(--accent-color);
+  border-bottom: 1px solid #ECECEC;
 }
 .flex{
   display: flex;
@@ -113,6 +114,8 @@ color: var(--accent-color)
 /* -------------------------hero----------------------- */
 .section-hero {
   background-color: var(--temporory-bgc);
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .hero-title{
